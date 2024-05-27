@@ -1,0 +1,43 @@
+.tooltip {
+  display: none;
+  position: absolute;
+  border: 1px solid #333;
+  background-color: #161616;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 18;
+  color: #f00;
+}
+
+.easyPaginateNav a {
+  padding: 5px;
+}
+.easyPaginateNav a.current {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.filter__link {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.filter__link::after {
+  content: "";
+  position: absolute;
+  right: -18px;
+  font-size: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.filter__link.desc::after {
+  content: "(desc)";
+}
+
+.filter__link.asc::after {
+  content: "(asc)";
+}
